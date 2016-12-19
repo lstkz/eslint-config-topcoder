@@ -145,5 +145,26 @@ Run scripts with `-s` flag
    ```
 
 
+## Config for unit tests
+If `test` directory contains unit tests, you should create `test/.eslintrc` and extend the base config.  
+Example:
+```js
+{
+  "extends" : "../.eslintrc",
+  "env"     : {
+    "mocha" : true
+  },
+  "globals": {
+    "expect": true,
+  },
+  "rules": {
+    // allow chai asserts like `expect(foo).to.be.true`
+    "no-unused-expressions": 0,
+    "no-magic-numbers": 0,
+    "max-lines": 0,
+  }
+}
+```
+
 ## License
 MIT
