@@ -143,7 +143,12 @@ Run scripts with `-s` flag
 
    // eslint-disable-line magic-numbers
    ```
-
+1. Exceptions for `import/no-unresolved`
+   It's allowed to add exceptions if you use aliases (mostly React).  
+   For example:
+   ```js  
+   'import/no-unresolved': [2, { ignore: ['^components/', '^containers/', '^services/', '^layouts/'] }]
+   ```
 
 ## Config for unit tests
 If `test` directory contains unit tests, you should create `test/.eslintrc` and extend the base config.  
