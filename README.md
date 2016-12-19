@@ -9,7 +9,7 @@ This package contains ESLint configs for applications:
 
 It contains plugins:
 - [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) - ESLint rules for babel
-- [eslint-plugin-babel](https://github.com/yannickcr/eslint-plugin-react) - ESLint rules for react
+- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - ESLint rules for react
 - [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash) - ESLint rules for lodash (`underscore` is forbidden)
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - ESLint plugin with rules that help validate proper imports
 
@@ -165,6 +165,10 @@ Example:
   }
 }
 ```
+
+
+## Contributors
+* [lsentkiewicz](https://github.com/lsentkiewicz) - **Łukasz Sentkiewicz** [@Sky_](https://www.topcoder.com/members/Sky_)
 
 ## License
 MIT

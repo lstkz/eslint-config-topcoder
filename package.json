@@ -9,6 +9,10 @@
     "lint:react": "eslint test/babel.js -c react.js",
     "test": "npm run lint:nodejs && npm run lint:nodejs-babel && npm run lint:react"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsentkiewicz/eslint-config-topcoder.git"
+  },
   "keywords": [
     "eslint",
     "config",
