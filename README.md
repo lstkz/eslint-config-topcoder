@@ -98,6 +98,7 @@ Run scripts with `-s` flag
    In some cases you can disable this rule:  
   * Math computations  
      ```js
+
      const avg = (foo + bar) / 2; // eslint-disable-line magic-numbers
      ```
   * Unit tests  
@@ -133,11 +134,13 @@ Run scripts with `-s` flag
      ```
 1. You should disable only using inline commands:  
    bad (all rules are disabled)  
-   ```
+   ```js
+
    // eslint-disable-line
-   ```
+   ```  
    good (only 1 rule is disabled)  
-   ```
+   ```js
+
    // eslint-disable-line magic-numbers
    ```
 
