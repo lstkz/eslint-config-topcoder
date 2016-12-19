@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-topcoder",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "ESLint config for nodejs, react and babel",
   "main": "index.js",
   "scripts": {
