@@ -32,5 +32,6 @@ module.exports = {
     './rules/react',
   ].map(require.resolve),
   rules: {
+    'no-param-reassign': 'error',
   },
 };
