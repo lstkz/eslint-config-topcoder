@@ -23,7 +23,7 @@ module.exports = {
     'lodash/prefer-includes': ['error', {includeNative: true}],
     'lodash/prefer-invoke-map': 'error',
     'lodash/prefer-is-nil': 'error',
-    'lodash/prefer-lodash-chain': 'error',
+    'lodash/prefer-lodash-chain': 'off',
     'lodash/prefer-lodash-method': 'off',
     'lodash/prefer-lodash-typecheck': 'error',
     'lodash/prefer-map': 'error',
