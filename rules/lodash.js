@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'lodash/callback-binding': 'error',
     'lodash/chain-style': ['error', 'as-needed'],
-    'lodash/chaining': 'error',
+    'lodash/chaining': ['error', 'always'],
     'lodash/collection-method-value': 'error',
     'lodash/collection-return': 'error',
     'lodash/consistent-compose': ['error', "flow"],

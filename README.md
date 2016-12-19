@@ -32,7 +32,7 @@ Configure `.eslintrc`
 ### Nodejs + babel
 
 ```
-npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0
+npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0 babel-eslint@^7.1.1
 ```
 
 Configure `.eslintrc`
@@ -46,7 +46,7 @@ Configure `.eslintrc`
 ### React
 
 ```
-npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0 eslint-plugin-react@^6.8.0
+npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0 eslint-plugin-react@^6.8.0 babel-eslint@^7.1.1
 ```
 
 Configure `.eslintrc`
