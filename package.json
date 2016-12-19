@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-topcoder",
+  "version": "1.0.0",
+  "description": "ESLint config for nodejs, react and babel",
+  "main": "index.js",
+  "scripts": {
+    "lint:nodejs": "eslint test/nodejs.js -c nodejs.js",
+    "lint:nodejs-babel": "eslint test/babel.js -c nodejs-babel.js",
+    "lint:react": "eslint test/babel.js -c react.js",
+    "test": "npm run lint:nodejs && npm run lint:nodejs-babel && npm run lint:react"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "react",
+    "babel",
+    "topcoder"
+  ],
+  "author": "Łukasz Sentkiewicz (https://www.topcoder.com/members/Sky_/)",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^3.12.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-lodash": "^2.2.4"
+  },
+
+  "peerDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}
