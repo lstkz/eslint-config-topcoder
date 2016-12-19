@@ -18,5 +18,6 @@ module.exports = {
     './rules/strict',
   ].map(require.resolve),
   rules: {
+    'import/no-commonjs': 'error',
   },
 };

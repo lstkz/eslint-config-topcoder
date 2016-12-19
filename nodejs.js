@@ -24,5 +24,6 @@ module.exports = {
   ].map(require.resolve),
   rules: {
     strict: ['error', 'global'],
+    'import/no-commonjs': 'off',
   },
 };
