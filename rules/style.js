@@ -184,16 +184,7 @@ module.exports = {
 
     // disallow mixed binary operators
     // http://eslint.org/docs/rules/no-mixed-operators
-    'no-mixed-operators': ['error', {
-      groups: [
-        ['+', '-', '*', '/', '%', '**'],
-        ['&', '|', '^', '~', '<<', '>>', '>>>'],
-        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-        ['&&', '||'],
-        ['in', 'instanceof'],
-      ],
-      allowSamePrecedence: false,
-    }],
+    'no-mixed-operators': ["error", {"groups": [["&", "|", "^", "~", "<<", ">>", ">>>"], ["&&", "||"]]}],
 
     // disallow mixed spaces and tabs for indentation
     // http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
