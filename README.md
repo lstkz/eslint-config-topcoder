@@ -23,41 +23,41 @@ io.on('connection', (socket) => { // eslint-disable-line no-unused-vars
 1. `magic-numbers`
    Following magic numbers are allowed: `-1`, `0`, `1`.  
    In some cases you can disable this rule:  
-  * Math computations
-   ```js
+  * Math computations  
+     ```js
 const avg = (foo + bar) / 2; // eslint-disable-line magic-numbers
-```
+     ```
   * Unit tests  
-    Unit tests usually contain hard-coded data, and `magic-numbers` can be problematic.  
-    In following cases it's not allowed to disable magic-numbers
-  *
-    bad
-   ```js
+     Unit tests usually contain hard-coded data, and `magic-numbers` can be problematic.  
+     
+  * In following cases it's not allowed to disable magic-numbers  
+     bad
+     ```js
 res.status(400);
 res.json({error: 'some validation error'});
-```
-   good
-   ```js
+     ```
+     good
+     ```js
 import HttpStatus from 'http-status';
 
 res.status(HttpStatus.BAD_REQUEST);
 res.json({error: 'some validation error'});
-```
-  *
-  bad
-```js
+     ```
+
+     bad
+     ```js
 if (foo.status === 1) {
 
 }
-```
-  good
-```js
+     ```
+     good
+     ```js
 const ACTIVE_STATUS = 1;
 
 if (foo.status === ACTIVE_STATUS) {
 
 }
-```
+     ```
 1. You should disable only using inline commands:
    bad (all rules are disabled)
 ```
