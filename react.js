@@ -34,6 +34,7 @@ module.exports = {
   rules: {
     'no-param-reassign': 'error',
     'no-extra-parens': 'off',
+    'no-console': ["error", { allow: ["warn", "error"] }],
   },
   settings: {
     'import/resolver': {
