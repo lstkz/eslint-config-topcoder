@@ -33,5 +33,13 @@ module.exports = {
   ].map(require.resolve),
   rules: {
     'no-param-reassign': 'error',
+    'no-extra-parens': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.json'],
+      }
+    },
   },
 };
