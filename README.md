@@ -145,8 +145,9 @@ Run scripts with `-s` flag
    ```
 1. Exceptions for `import/no-unresolved`
    It's allowed to add exceptions if you use aliases (mostly React).  
-   For example:
+   For example:  
    ```js  
+
    'import/no-unresolved': [2, { ignore: ['^components/', '^containers/', '^services/', '^layouts/'] }]
    ```
 
