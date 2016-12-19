@@ -143,7 +143,7 @@ Run scripts with `-s` flag
 
    // eslint-disable-line magic-numbers
    ```
-1. Exceptions for `import/no-unresolved`
+1. Exceptions for `import/no-unresolved`  
    It's allowed to add exceptions if you use aliases (mostly React).  
    For example:  
    ```js  
