@@ -1,3 +1,78 @@
+# eslint-config-topcoder
+
+[![Build Status](https://travis-ci.org/lsentkiewicz/eslint-config-topcoder.svg?branch=master)](https://travis-ci.org/lsentkiewicz/eslint-config-topcoder)
+
+This package contains ESLint configs for applications:
+- nodejs v7 (backend application)
+- nodejs v7 with babel (backend application written in babel)
+- react
+
+It contains plugins:
+- [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel) - ESLint rules for babel
+- [eslint-plugin-babel](https://github.com/yannickcr/eslint-plugin-react) - ESLint rules for react
+- [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash) - ESLint rules for lodash (`underscore` is forbidden)
+- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - ESLint plugin with rules that help validate proper imports
+
+## Installation
+
+### Nodejs
+
+```
+npm install --save-dev eslint-config-topcoder
+```
+
+Configure `.eslintrc`
+
+```
+{
+  "extends": "eslint-config-topcoder/nodejs"
+}
+```
+
+### Nodejs + babel
+
+```
+npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0
+```
+
+Configure `.eslintrc`
+
+```
+{
+  "extends": "eslint-config-topcoder/nodejs-babel"
+}
+```
+
+### React
+
+```
+npm install --save-dev eslint-config-topcoder eslint-plugin-babel@^4.0.0 eslint-plugin-react@^6.8.0
+```
+
+Configure `.eslintrc`
+
+```
+{
+  "extends": "eslint-config-topcoder/react"
+}
+```
+
+
+### Add scripts to package.json
+
+```
+"scripts": {
+  "lint": "eslint .",
+  "lint:fix": "npm run lint -- --fix"
+}
+```
+
+Run scripts with `-s` flag  
+```
+  npm run lint -s
+  npm run lint:fix -s
+```
+
 ## General notes
 1. It's not allowed to disable rules. The purpose of this config is to keep consistent styles in all topcoder projects.  
    However some exception are allowed.  
