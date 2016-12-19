@@ -91,7 +91,7 @@ module.exports = {
 
     // enforce position of line comments
     // http://eslint.org/docs/rules/line-comment-position
-    'line-comment-position': 'error',
+    'line-comment-position': 'off',
 
     // enforce consistent linebreak style
     // http://eslint.org/docs/rules/linebreak-style
