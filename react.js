@@ -29,6 +29,7 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
+    './rules/babel',
     './rules/react',
   ].map(require.resolve),
   rules: {
